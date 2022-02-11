@@ -1,0 +1,35 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.editor {
+  margin: 5px;
+  width: 1200px;
+  min-height: 100vh;
+  max-height: 100%;
+  background-color: #2f2f2f;
+  cursor: text;
+}
+
+.line {
+  display: grid;
+  grid-template-columns: 2% 98%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.line_text {
+  color: aliceblue;
+}
+
+.line_text:focus {
+  background-color: rgb(29, 29, 29);
+  outline: none;
+}
+.line_number {
+  color: gray;
+  font-size: bold;
+  text-align: center;
+  background: rgb(29, 29, 29);
+}
